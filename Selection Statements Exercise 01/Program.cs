@@ -316,57 +316,81 @@ namespace Selection_Statements_Exericse_01_Answers
 
             Console.WriteLine("What grade did you get in math?");
             char grade = Convert.ToChar(Console.ReadLine());
-            Console.WriteLine(grade);
-            
-            switch (grade)
-            {
-                case 'A':
-                    Console.WriteLine("You got an A?");
-                    break;
-                case 'B':
-                Console.WriteLine("You got a B?");
-                break;
-                case 'C':
-                    Console.WriteLine("You got a C?");
-                break;
-                case 'D':
-                    Console.WriteLine("You got a D?");
-                break;
-                default:
-                    Console.WriteLine("Sorry, you did not pass.");
-                    Console.ReadLine();
-                    break;
-           
-            }
 
-             
-            Console.WriteLine(orders);
-            switch (ChooseRandomOrder(orders))
-            
+            while (grade == grade)
+               
+            {
+                switch (grade)
+                {
+                    case 'A':
+                        Console.WriteLine("You got an A?");
+                        break;
+                    case 'B':
+                        Console.WriteLine("You got a B?");
+                        break;
+                    case 'C':
+                        Console.WriteLine("You got a C?");
+                        break;
+                    case 'D':
+                        Console.WriteLine("You got a D?");
+                        break;
+                    default:
+                        Console.WriteLine("Sorry, you did not pass.");
+                        break;
+                }
+                Console.WriteLine("Do you want to run again?");
+                string isYes = Convert.ToString(Console.ReadLine());
+                isYes = isYes.ToLower();
+                var itsYes =  "yes";
+                var itsNo = "no";
+
+                if (isYes == itsYes)
+                {
+                    Console.WriteLine("Well, lets continue.");
+                    
+                }
+                else if (isYes == itsNo)
+                {
+                    Console.WriteLine("Ok then bye.");
+                    break;
+                }
+
+
+
+
+            } 
+
+
+
+
+
+        switch (ChooseRandomOrder(orders))
+
             {
                 case 1:
                     Console.WriteLine("Double double, animal fries, diet coke.");
                     break;
-               case 2:
+                case 2:
                     Console.WriteLine("Cheeseburger, fries, strawberry shake.");
                     break;
-               case 3:
+                case 3:
                     Console.WriteLine("Hamburger, salad, coffee.");
-                   break; 
-               case 4:
+                    break;
+                case 4:
                     Console.WriteLine("Spaghetti, meatballs, wine.");
                     break;
-               case 5:
+                case 5:
                     Console.WriteLine("Pizza, calzone, champagne.");
                     break;
-              default:
+                default:
                     Console.WriteLine("Sorry,Not on my menu.");
                     break;
                     Console.ReadLine();
             }
             // TODO: Create a switch/case to take a bunch of orders and print out the order to the console ( use the orders variable and the ChooseRandomOrder() method)
             // TODO: Create a switch/case to Take a collection of suits (regardless of capitalization) and print the suit to the console
-            Console.WriteLine(suits);
+            
+
             switch (ChooseRandomSuit(suits))
             {
                 case "clubs":
@@ -381,11 +405,13 @@ namespace Selection_Statements_Exericse_01_Answers
                 case "spades":
                     Console.WriteLine("This is the suit of spades");
                     break;
-                    default:
+                default:
                     Console.WriteLine("This is not a suit of cards, probably a joker.");
                     break;
             }
             Util.CreateStatementBreak();
+
+
 
             #endregion
 
