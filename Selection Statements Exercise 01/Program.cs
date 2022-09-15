@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Selection_Statements_Exericse_01_Answers
 {
@@ -31,12 +32,13 @@ namespace Selection_Statements_Exericse_01_Answers
 
 
 
-            // TODO: (True or False) Will this statement be executed? 
-            // TODO: What will be printed to the console?
+            // TODO: (True or False) Will this statement be executed? true
+            // TODO: What will be printed to the console? if count 1
             // TODO: Check your anwer by printing it to the console
             if (true)
             {
                 if_count++;
+                Console.WriteLine($"IF statment count: {if_count}");
             }
 
 
@@ -46,39 +48,45 @@ namespace Selection_Statements_Exericse_01_Answers
 
 
 
-            // TODO: (True or False) Will this statement be executed? 
-            // TODO: What will be printed to the console?
+            // TODO: (True or False) Will this statement be executed? false
+            // TODO: What will be printed to the console? nothing
             // TODO: Check your anwer by printing it to the console
             if (false)
             {
                 if_count++;
+                Console.WriteLine($"If statement count: {if_count}.");
             }
 
             Util.CreateStatementBreak();
 
 
 
-            // TODO: (True or False) Will this statement be executed? 
-            // TODO: What will be printed to the console?
+            // TODO: (True or False) Will this statement be executed? true  
+            // TODO: What will be printed to the console? if count 2
             // TODO: Check your anwer by printing it to the console
             if (var1)
             {
                 if_count++;
+                Console.WriteLine($"if statement count : {if_count}.");
+                
+                
             }
 
             Util.CreateStatementBreak();
 
 
 
-            // TODO: (True or False) Will this statement be executed? 
-            // TODO: What will be printed to the console?
+            // TODO: (True or False) Will this statement be executed? false
+            // TODO: What will be printed to the console? nothing
             // TODO: Check your anwer by printing it to the console
             if (var2)
             {
                 if_count++;
+                Console.WriteLine($"if statement count : {if_count}.");
             }
 
             Util.CreateStatementBreak();
+        
 
             #endregion
 
@@ -90,8 +98,8 @@ namespace Selection_Statements_Exericse_01_Answers
 
 
 
-            // TODO: Which statement gets run? The IF or ELSE statement?
-            // TODO: What will be printed to the console?
+            // TODO: Which statement gets run? The IF or ELSE statement? if
+            // TODO: What will be printed to the console? if count 3
             // TODO: Check your anwer by printing it to the console 
             if (true)
             {
@@ -101,13 +109,14 @@ namespace Selection_Statements_Exericse_01_Answers
             {
                 else_count++;
             }
-
+            Console.WriteLine($"if statement count : {if_count}.");
+         
             Util.CreateStatementBreak();
+            
 
 
-
-            // TODO: Which statement gets run? The IF or ELSE statement?
-            // TODO: What will be printed to the console?
+            // TODO: Which statement gets run? The IF or ELSE statement? else
+            // TODO: What will be printed to the console? else count 1
             // TODO: Check your anwer by printing it to the console 
             if (var2 == true)
             {
@@ -117,13 +126,14 @@ namespace Selection_Statements_Exericse_01_Answers
             {
                 else_count++;
             }
-
+            Console.WriteLine($"if statement count : {if_count}.");
+            Console.WriteLine($"else statement count : {else_count}.");
             Util.CreateStatementBreak();
 
 
 
-            // TODO: Which statement gets run? The IF or ELSE statement?
-            // TODO: What will be printed to the console?
+            // TODO: Which statement gets run? The IF or ELSE statement? else   
+            // TODO: What will be printed to the console? else count 2
             // TODO: Check your anwer by printing it to the console
             if (var1 == false)
             {
@@ -133,13 +143,15 @@ namespace Selection_Statements_Exericse_01_Answers
             {
                 else_count++;
             }
-
+            Console.WriteLine($"if statement count : {if_count}.");
+            Console.WriteLine($"else statement count : {else_count}.");
+           
             Util.CreateStatementBreak();
 
 
 
-            // TODO: Which statement gets run? The IF or ELSE statement?
-            // TODO: What will be printed to the console?
+            // TODO: Which statement gets run? The IF or ELSE statement? if     
+            // TODO: What will be printed to the console? if count 4
             // TODO: Check your anwer by printing it to the console
             if (var2 == false)
             {
@@ -149,13 +161,14 @@ namespace Selection_Statements_Exericse_01_Answers
             {
                 else_count++;
             }
-
+            Console.WriteLine($"if statement count : {if_count}.");
+            Console.WriteLine($"else statement count : {else_count}.");
             Util.CreateStatementBreak();
 
 
 
-            // TODO: Which statement gets run? The IF or ELSE statement?
-            // TODO: What will be printed to the console?
+            // TODO: Which statement gets run? The IF or ELSE statement? if    
+            // TODO: What will be printed to the console?if count 5
             // TODO: Check your anwer by printing the count to the console
             if (var2 != var1)
             {
@@ -165,13 +178,15 @@ namespace Selection_Statements_Exericse_01_Answers
             {
                 else_count++;
             }
+            Console.WriteLine($"if statement count : {if_count}.");
+            Console.WriteLine($"else statement count : {else_count}.");
 
             Util.CreateStatementBreak();
 
 
 
-            // TODO: Which statement gets run? The IF or ELSE statement?
-            // TODO: What will be printed to the console?
+            // TODO: Which statement gets run? The IF or ELSE statement? else
+            // TODO: What will be printed to the console? else count 2
             if (if_count == else_count)
             {
                 Util.PrintIfCount(if_count, else_count);
@@ -180,7 +195,7 @@ namespace Selection_Statements_Exericse_01_Answers
             {
                 Util.PrintElseCount(else_count, if_count);
             }
-
+        
             Util.CreateStatementBreak();
 
             #endregion
@@ -201,8 +216,8 @@ namespace Selection_Statements_Exericse_01_Answers
 
 
 
-            // TODO: Which statement gets run? The IF, ELSE IF, or ELSE statement?
-            // TODO: What will be printed to the console?
+            // TODO: Which statement gets run? The IF, ELSE IF, or ELSE statement? else if
+            // TODO: What will be printed to the console? x is greater than 0
             if (x == 0)
             {
                 Console.WriteLine($"x equals 0");
@@ -220,8 +235,8 @@ namespace Selection_Statements_Exericse_01_Answers
 
 
 
-            // TODO: Which statement gets run? The IF, ELSE IF, or ELSE statement?
-            // TODO: What will be printed to the console?
+            // TODO: Which statement gets run? The IF, ELSE IF, or ELSE statement? if 
+            // TODO: What will be printed to the console? if statement count: 1
             if (y > 0 || z.Contains('c'))
             {
                 if_count++;
@@ -242,8 +257,8 @@ namespace Selection_Statements_Exericse_01_Answers
 
 
 
-            // TODO: Which statement gets run? The IF, ELSE IF, or ELSE statement?
-            // TODO: What will be printed to the console?
+            // TODO: Which statement gets run? The IF, ELSE IF, or ELSE statement? else if  
+            // TODO: What will be printed to the console? else if statement count 1
             if (!true && !false)
             {
                 if_count++;
@@ -259,13 +274,13 @@ namespace Selection_Statements_Exericse_01_Answers
                 else_count++;
                 Console.WriteLine($"else statement count: {else_count}");
             }
-
+           
             Util.CreateStatementBreak();
 
 
 
-            // TODO: Which statement gets run? The IF, ELSE IF, or ELSE statement?
-            // TODO: What will be printed to the console?
+            // TODO: Which statement gets run? The IF, ELSE IF, or ELSE statement? else
+            // TODO: What will be printed to the console? else statement count 1
             if (if_count > else_if_count && if_count > else_count)
             {
                 if_count++;
@@ -281,7 +296,6 @@ namespace Selection_Statements_Exericse_01_Answers
                 else_count++;
                 Console.WriteLine($"else statement count: {else_count}");
             }
-
             Util.CreateStatementBreak();
 
             #endregion
@@ -299,16 +313,78 @@ namespace Selection_Statements_Exericse_01_Answers
             // Ex: case 'A':
             //         Console.WriteLine("You got an A!");
             //         break;
+
+            Console.WriteLine("What grade did you get in math?");
+            char grade = Convert.ToChar(Console.ReadLine());
+            Console.WriteLine(grade);
             
-            switch (ChooseRandomGrade(grades))
+            switch (grade)
             {
-                
+                case 'A':
+                    Console.WriteLine("You got an A?");
+                    break;
+                case 'B':
+                Console.WriteLine("You got a B?");
+                break;
+                case 'C':
+                    Console.WriteLine("You got a C?");
+                break;
+                case 'D':
+                    Console.WriteLine("You got a D?");
+                break;
+                default:
+                    Console.WriteLine("Sorry, you did not pass.");
+                    Console.ReadLine();
+                    break;
+           
             }
 
-
+             
+            Console.WriteLine(orders);
+            switch (ChooseRandomOrder(orders))
+            
+            {
+                case 1:
+                    Console.WriteLine("Double double, animal fries, diet coke.");
+                    break;
+               case 2:
+                    Console.WriteLine("Cheeseburger, fries, strawberry shake.");
+                    break;
+               case 3:
+                    Console.WriteLine("Hamburger, salad, coffee.");
+                   break; 
+               case 4:
+                    Console.WriteLine("Spaghetti, meatballs, wine.");
+                    break;
+               case 5:
+                    Console.WriteLine("Pizza, calzone, champagne.");
+                    break;
+              default:
+                    Console.WriteLine("Sorry,Not on my menu.");
+                    break;
+                    Console.ReadLine();
+            }
             // TODO: Create a switch/case to take a bunch of orders and print out the order to the console ( use the orders variable and the ChooseRandomOrder() method)
             // TODO: Create a switch/case to Take a collection of suits (regardless of capitalization) and print the suit to the console
-
+            Console.WriteLine(suits);
+            switch (ChooseRandomSuit(suits))
+            {
+                case "clubs":
+                    Console.WriteLine("This is the suit of clubs.");
+                    break;
+                case "diamonds":
+                    Console.WriteLine("This is the suit of diamonds.");
+                    break;
+                case "clovers":
+                    Console.WriteLine("This is the suit of clovers");
+                    break;
+                case "spades":
+                    Console.WriteLine("This is the suit of spades");
+                    break;
+                    default:
+                    Console.WriteLine("This is not a suit of cards, probably a joker.");
+                    break;
+            }
             Util.CreateStatementBreak();
 
             #endregion
@@ -324,13 +400,13 @@ namespace Selection_Statements_Exericse_01_Answers
         public static int ChooseRandomOrder(int[] orders)
         {
             var rng = new Random();
-            return orders[rng.Next(0, orders.Length - 1)];
+           return orders[rng.Next(0, orders.Length - 1)];
         }
 
         public static string ChooseRandomSuit(string[] suits)
-        {
+       {
             var rng = new Random();
-            return suits[rng.Next(0, suits.Length - 1)];
+           return suits[rng.Next(0, suits.Length - 1)];
         }
     }
 }
